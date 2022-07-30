@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
+.vertical-height{
+    height: calc(100vh - 3.5rem) !important;
+}
+
+.left-mask{
+    -webkit-mask-image: linear-gradient(-90deg,rgb(0, 0, 0),rgba(0, 0, 0, 0))!important;
+}
+.bottom-mask{
+    -webkit-mask-image: linear-gradient(180deg,rgb(0, 0, 0),rgba(0, 0, 0, 0))!important;
+}
+.item-left-mask{
+    -webkit-mask-image: linear-gradient(-90deg,rgb(0, 0, 0),rgba(0, 0, 0, 0))!important;
+} 
+
+.fadebottom{
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+    height: 8rem;
+}
+
+.gradient{
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
