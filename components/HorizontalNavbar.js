@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Avatar from "@mui/material/Avatar";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+
+import SearchOutlinedIcon  from "@material-ui/icons/SearchOutlined";
 import Link from "next/link";
-import { VerifiedOutlined } from "@mui/icons-material";
+import { VerifiedOutlined } from "@material-ui/icons";
+import { Avatar } from "@material-ui/core";
 const HorizontalNavbar = () => {
   return (
     <nav className="h-14 text-sm flex items-center justify-between p-3 w-screen fixed top-0 left-0 right-0 bg-gray-900 pr-5">

@@ -1,8 +1,8 @@
-import { HomeOutlined } from "@mui/icons-material";
-import AppsIcon from '@mui/icons-material/Apps';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
-import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
-import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import { HomeOutlined } from "@material-ui/icons";
+import AppsIcon from '@material-ui/icons/Apps';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
+import LibraryAddCheckIcon from '@material-ui/icons/LibraryAddCheck';
+import HelpOutlineOutlinedIcon from '@material-ui/icons/HelpOutlineOutlined';
 import React from "react";
 
 const VerticalNavbar = () => {
