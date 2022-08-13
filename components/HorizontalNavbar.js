@@ -31,7 +31,7 @@ const HorizontalNavbar = () => {
 
       <div className="relative">
         <Avatar
-          src="/img/user.jpeg"
+          src="/img/user.png"
           style={{ bgColor: "black" }}
           className="cursor-pointer "
         />
