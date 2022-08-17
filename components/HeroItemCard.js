@@ -4,11 +4,13 @@ import Image from 'next/image'
 const HeroItemCard = ({imgSrc,title}) => {
   
   return (
-    <div className='relative h-32 w-60 md:min-w-[254px] min-w-[220px] text-white cursor-pointer group md:hover:border-sky-600 md:hover:border-4 rounded-xl md:hover:scale-105  transition-all ease-in duration-100 bg-black '>
+    <div className='relative min-w-[220px] text-white cursor-pointer group md:hover:scale-105  rounded-xl   transition-all ease-in duration-100 bg-black '>
       <Image
-        layout='fill'
+        layout='responsive'
         src={imgSrc}
         objectFit="cover"
+        width={1920}
+        height={1080}
         quality={100}
         className="item-left-mask rounded-xl md:group-hover:translate-x-1 transition-all ease-in duration-200"
       />

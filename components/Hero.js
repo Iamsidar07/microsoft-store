@@ -29,6 +29,7 @@ const Hero = () => {
 
   return (
     <div className="relative md:w-[calc(100vw-3.5rem)] h-full  overflow-y-scroll overflow-x-hidden  space-y-5 no-scrollbar">
+      
       <HomeBg
         imgSrc={imgSrc}
         title={title}
@@ -37,9 +38,10 @@ const Hero = () => {
         priceAfterDiscount={priceAfterDiscount}
         ifFreeMessage={ifFreeMessage}
       />
+     
       <Features features={features} setFeature={setFeature} />
 
-      <div className="">
+      <div className="p-2">
         <CardRow
           rowTitle={"Top free apps"}
           rowMessage={"See all"}
