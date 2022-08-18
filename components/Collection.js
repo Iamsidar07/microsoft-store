@@ -9,7 +9,7 @@ const Collection = ({heading,subHeading,labels}) => {
         {subHeading}
       </p>
     </div>
-    <div className="grid sm:grid-cols-2  md:grid-cols-3 gap-3  space-y-4 md:space-y-0 py-2 md:py-3 overflow-x-scroll no-scrollbar ">
+    <div className="grid sm:grid-cols-2  md:grid-cols-3 gap-3  space-y-1 md:space-y-0 py-2 md:py-3 overflow-x-scroll no-scrollbar ">
       {labels.map(({ imgSrc, title, description }, i) => {
         return (
           <div key={i} >

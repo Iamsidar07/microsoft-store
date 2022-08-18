@@ -41,7 +41,7 @@ const Hero = () => {
      
       <Features features={features} setFeature={setFeature} />
 
-      <div className="p-2">
+      <div className="p-2 space-y-3">
         <CardRow
           rowTitle={"Top free apps"}
           rowMessage={"See all"}

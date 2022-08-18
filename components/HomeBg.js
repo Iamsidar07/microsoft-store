@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const HomeBg = ({
   imgSrc,
@@ -9,20 +10,24 @@ const HomeBg = ({
   priceAfterDiscount,
   ifFreeMessage,
 }) => {
+
+  const [showFullBg,setShowFullBg]=useState(false);
+
   return (
     <div
-      className=" left-mask bottom-mask p-2 md:pl-5 h-[40vh] md:h-[60vh] w-full "
+      className={` md:bottom-mask  p-2 md:pl-5  ${showFullBg?"h-[100vh]":"h-[50vh] md:h-[60vh]"} w-full `}
       style={{
         backgroundImage: `url(${imgSrc})`,
         backgroundSize: "cover",
         borderRadius: "10px",
+        backgroundAttachment:"fixed",
       }}
     >
       <div className=" relative flex  h-full flex-col justify-center  p-2 md:p-5  z-50 opacity-100">
         <h1 className="hidden md:block text-white cursor-pointer text-xl absolute top-0 left-0 py-3 ">
           Home
         </h1>
-        <div className="  bg-orange-500 md:bg-gray-900/40 px-10 py-5 rounded space-y-8 w-full md:w-2/3 max-w-6xl mt-4 text-white">
+        <div className="  bg-orange-500 md:bg-gray-900/40 px-10 py-5 rounded space-y-8 w-full md:w-1/2 max-w-6xl mt-4 text-white">
           <div className="space-y-3">
             <p className="text-green-600 my-2 text-xs">
               {ifFreeMessage && (

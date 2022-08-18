@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import CloudDownloadIcon  from "@material-ui/icons/CloudDownload";
+import { Grade } from "@material-ui/icons";
 const InfoRow = ({
   imgSrc,
   appName,
@@ -26,9 +27,11 @@ const InfoRow = ({
         <div className="space-y-1 text-sm text-gray-500">
           <h1 className="capitalize text-base text-white">{appName}</h1>
           <p>{category}</p>
-          <p>
-            ✨{rating}
-            <span className="pl-1">{noOfVotes}</span>
+          <p className="flex items-center ">
+            <Grade/>
+             <span className="px-1">{rating}</span>
+            <span className="px-1">{noOfVotes} </span>
+            <CloudDownloadIcon/>
           </p>
         </div>
       </div>
